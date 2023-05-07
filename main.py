@@ -7,9 +7,11 @@ turtle_screen.bgpic("Slider-CL01-Background.png")
 turtle_screen.setup(800,600)
 turtle_screen.title("Tospa'yı Yakala")
 
+turtle.tracer(0)
 turtle_image=turtle.Turtle()
 turtle_image.penup()
 turtle_image.shape('turtle')
+turtle_image.shapesize(4)
 
 score1=10
 points = turtle.Turtle()
@@ -46,6 +48,6 @@ def countdown(time):
 
 turtle_screen.onclick(lambda x, y: countdown(30))
 
-
+turtle.tracer(1)
 
 turtle.mainloop()
